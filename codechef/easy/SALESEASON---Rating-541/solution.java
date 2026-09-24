@@ -13,29 +13,21 @@ class Codechef
 		
 		for(int i = 0; i < t; i++) {
 		    
-		    int count = 0;
+		    int x = sc.nextInt();
 		    
-		    for(int j = 0; j < 3; j++) {
-		        
-		        int x = sc.nextInt();
-		        
-		        if(x == 0) {
-		            count++;
-		        } else {
-		            count--;
-		        }
-		        
-		    }
-		    
-		    if(count >= 1) {
-		        System.out.println("Water filling time");
+		    if(x <= 100) {
+		        System.out.println(x);
+		    } else if ((x > 100) && (x <= 1000)) {
+		        System.out.println(x - 25);
+		    } else if ((x > 1000) && (x <= 5000)) {
+		        System.out.println(x - 100);
 		    } else {
-		        System.out.println("Not now");
+		        System.out.println(x - 500);
 		    }
 		    
 		}
 		
 		sc.close();
-
+		
 	}
 }
