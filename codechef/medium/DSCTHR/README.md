@@ -67,7 +67,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T13:46:31.393Z  
+**Submitted:** 2026-10-12T13:48:51.129Z  
 
 ```java
 import java.util.*;
@@ -76,33 +76,21 @@ import java.io.*;
 
 class Codechef
 {
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-		Scanner sc = new Scanner(System.in);
-		
-		int t = sc.nextInt();
-		
-		for(int i = 0; i < t; i++) {
-		    
-		    for(int j = 0; j < 3; j++) {
-		        
-		  int max = Integer.MIN_VALUE;
-		    int temp = sc.nextInt();
-		    
-		    max = Math.max(max, temp);
-		        
-		    }
-		    
-		    int max = Integer.MIN_VALUE;
-		    int temp = sc.nextInt();
-		    
-		    max = Math.max(max, temp);
-		}
-
-	}
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 0; i < t; i++) {
+            int max = Integer.MIN_VALUE;
+            for (int j = 0; j < 3; j++) {
+                int temp = sc.nextInt();
+                max = Math.max(max, temp);
+            }
+            System.out.println(max);
+        }
+        sc.close();
+    }
 }
-
 ```
 
 ---
