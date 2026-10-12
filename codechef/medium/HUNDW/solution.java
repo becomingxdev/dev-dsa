@@ -25,10 +25,11 @@ class Codechef
 		        arr[j] = sc.nextInt();
 		    }
 		    
-		    int sum = 0;
+		    int sum = 1;
+		    int pointer = 0;
 		    
 		    for(int j = 0; j < m; j++) {
-		        int before = 
+		        int before = limit - pointer 
 		    }
 		}
 
