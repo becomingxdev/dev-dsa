@@ -25,13 +25,26 @@ class Codechef
 		        arr[j] = sc.nextInt();
 		    }
 		    
-		    int sum = 1;
+		    int unsafe = 0;
 		    int pointer = 0;
 		    
 		    for(int j = 0; j < m; j++) {
-		        int before = limit - pointer 
+		        
+		        int left = Math.max(1, arr[j] - limit);
+		        int right = Math.min(100, arr[j] + limit);
+		        
+		        if (right > pointer) {
+		            pointer = right;
+		        }
+		        
+		        int start = Math.max(left, pointer + 1);
+		        unsafe += right - start + 1;
+		        
 		    }
+		    
+		    System.out.println(100 - unsafe);
 		}
-
+		
+		sc.close();
 	}
 }
