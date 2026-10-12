@@ -63,7 +63,7 @@ For the third test case, Chef buys only the most expensive item, which costs $11
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T13:49:39.930Z  
+**Submitted:** 2026-10-12T14:03:45.955Z  
 
 ```java
 import java.util.*;
@@ -75,8 +75,30 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 	    
+	    Scanner sc = new Scanner(System.in);
 	    
-
+	    int t = sc.nextInt();
+	    
+	    for(int i = 0; i < t; i++) {
+	        
+	        int n = sc.nextInt();
+	        int k = sc.nextInt();
+	        
+	        int arr[] = new int[n];
+	        
+	        for(int j = 0; j < n; i++)  {
+	            arr[j] = sc.nextInt();
+	        }
+	        
+	        Arrays.sort(arr);
+	        int sum = 0;
+	        for(int x = n - 1; x >= (n - k); x--) {
+	            sum += arr[x];
+	        }
+	        
+	        System.out.println(sum);
+	        
+	    }
 	}
 }
 
