@@ -67,7 +67,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T13:45:20.401Z  
+**Submitted:** 2026-10-12T13:46:31.393Z  
 
 ```java
 import java.util.*;
@@ -84,6 +84,15 @@ class Codechef
 		int t = sc.nextInt();
 		
 		for(int i = 0; i < t; i++) {
+		    
+		    for(int j = 0; j < 3; j++) {
+		        
+		  int max = Integer.MIN_VALUE;
+		    int temp = sc.nextInt();
+		    
+		    max = Math.max(max, temp);
+		        
+		    }
 		    
 		    int max = Integer.MIN_VALUE;
 		    int temp = sc.nextInt();
