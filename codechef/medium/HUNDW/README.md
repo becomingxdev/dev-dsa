@@ -72,7 +72,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T14:32:43.975Z  
+**Submitted:** 2026-10-12T14:45:01.201Z  
 
 ```java
 import java.util.*;
@@ -102,14 +102,27 @@ class Codechef
 		        arr[j] = sc.nextInt();
 		    }
 		    
-		    int sum = 1;
+		    int unsafe = 0;
 		    int pointer = 0;
 		    
 		    for(int j = 0; j < m; j++) {
-		        int before = limit - pointer 
+		        
+		        int left = Math.max(1, arr[j] - limit);
+		        int right = Math.min(100, arr[j] + limit);
+		        
+		        if (right > pointer) {
+		            pointer = right;
+		        }
+		        
+		        int start = Math.max(left, pointer + 1);
+		        unsafe += right - start + 1;
+		        
 		    }
+		    
+		    System.out.println(100 - unsafe);
 		}
-
+		
+		sc.close();
 	}
 }
 
