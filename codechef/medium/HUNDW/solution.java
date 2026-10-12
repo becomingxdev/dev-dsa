@@ -33,12 +33,15 @@ class Codechef
 		        int left = Math.max(1, arr[j] - limit);
 		        int right = Math.min(100, arr[j] + limit);
 		        
-		        if (right > pointer) {
-		            pointer = right;
+		        int start = Math.max(left, pointer + 1);
+		        
+		        if (right >= start) {
+		            unsafe += right - start + 1;
 		        }
 		        
-		        int start = Math.max(left, pointer + 1);
-		        unsafe += right - start + 1;
+		        if(right > pointer) {
+		            pointer = right;
+		        }
 		        
 		    }
 		    
