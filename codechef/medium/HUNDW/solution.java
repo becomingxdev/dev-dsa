@@ -25,6 +25,8 @@ class Codechef
 		        arr[j] = sc.nextInt();
 		    }
 		    
+		    Arrays.sort(arr);
+		    
 		    int unsafe = 0;
 		    int pointer = 0;
 		    
