@@ -72,7 +72,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T14:22:55.949Z  
+**Submitted:** 2026-10-12T14:32:36.954Z  
 
 ```java
 import java.util.*;
@@ -102,10 +102,11 @@ class Codechef
 		        arr[j] = sc.nextInt();
 		    }
 		    
-		    int sum = 0;
+		    int sum = 1;
+		    int pointer = 0;
 		    
 		    for(int j = 0; j < m; j++) {
-		        int before = 
+		        int before = limit - pointer 
 		    }
 		}
 
