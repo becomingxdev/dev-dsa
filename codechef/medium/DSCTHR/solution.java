@@ -13,6 +13,15 @@ class Codechef
 		
 		for(int i = 0; i < t; i++) {
 		    
+		    for(int j = 0; j < 3; j++) {
+		        
+		  int max = Integer.MIN_VALUE;
+		    int temp = sc.nextInt();
+		    
+		    max = Math.max(max, temp);
+		        
+		    }
+		    
 		    int max = Integer.MIN_VALUE;
 		    int temp = sc.nextInt();
 		    
