@@ -16,8 +16,41 @@ class Codechef
 		    int n = sc.nextInt();
 		    int m = sc.nextInt();
 		    
-		    for()
+		    int sweetCost = new int[n];
+		    
+		    for(j = 0; j < n; j++) {
+		        sweetCost[j] = sc.nextInt();
+		    }
+		    
+		    int noOfSweets = 0;
+		    int left = 0;
+		    int right = 0;
+		    int currCost = 0;
+		    
+		    for (right = 0; right < n; right++) {
+		        
+		        currCost += sweetCost[right];
+		        
+		        while(currCost > m) {
+		            
+		            currCost -= arr[left];
+		            left++;
+		            int temp = right - left + 1;
+		            
+		            int(temp > noOfSweets) {
+		                noOfSweets = temp;
+		            }
+		            
+		        }
+		        
+		        noOfSweets = right - left + 1;
+		        
+		    }
+		    
+		    System.out.println(noOfSweets);
 		}
+		
+		sc.close();
 
 	}
 }
