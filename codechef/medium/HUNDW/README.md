@@ -72,7 +72,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-12T14:51:03.394Z  
+**Submitted:** 2026-10-12T14:52:52.878Z  
 
 ```java
 import java.util.*;
@@ -101,6 +101,8 @@ class Codechef
 		    for(int j = 0; j < m; j++) {
 		        arr[j] = sc.nextInt();
 		    }
+		    
+		    Arrays.sort(arr);
 		    
 		    int unsafe = 0;
 		    int pointer = 0;
